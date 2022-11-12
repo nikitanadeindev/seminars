@@ -6,8 +6,15 @@ Console.WriteLine("Введите первое целое число");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе целое число");
 int number2 = Convert.ToInt32(Console.ReadLine());
+int max = 0;
 
 if(number1 > number2)
-    Console.WriteLine($"Число {number1} больше чем число {number2}");
+{
+    max += number1;
+    Console.WriteLine($"Наибольшее число = {max}");
+}
 else
-    Console.WriteLine($"Число {number2} больше чем число {number1}");
+{
+    max += number2;
+    Console.WriteLine($"Наибольшее число = {max}");
+}
