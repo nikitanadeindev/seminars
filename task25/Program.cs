@@ -8,7 +8,11 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 
 int IncreaseDigits(int a, int b)
 {
-    return Convert.ToInt32(Math.Pow(a, b));
+    int num = a;
+    for(int i = 1; i < b; i++)
+        a *= num;
+        
+    return a;
 }
 
 int result = IncreaseDigits(numberA, numberB);
