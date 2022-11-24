@@ -15,5 +15,10 @@ int IncreaseDigits(int a, int b)
     return a;
 }
 
-int result = IncreaseDigits(numberA, numberB);
-Console.WriteLine($"{numberA}, {numberB} -> {result}");
+if(numberB <= 0) Console.WriteLine("Нужно ввести натуральное число");
+else
+{
+    int result = IncreaseDigits(numberA, numberB);
+    Console.WriteLine($"{numberA}, {numberB} -> {result}");
+}
+
