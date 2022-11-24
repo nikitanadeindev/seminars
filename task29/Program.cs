@@ -4,18 +4,18 @@ Console.Write("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[size];
 
-void CreateArray()
+void CreateArray(int[] arr)
 {
     Random rnd = new Random();
-    for(int i = 0; i < array.Length; i++)
-        array[i] = rnd.Next(100);
+    for(int i = 0; i < arr.Length; i++)
+        arr[i] = rnd.Next(100);
 }
 
-void PrintArray()
+void PrintArray(int[] arr)
 {
-    for(int i = 0; i < array.Length; i++)
-        Console.Write(array[i] + " ");
+    for(int i = 0; i < arr.Length; i++)
+        Console.Write(arr[i] + " ");
 }
 
-CreateArray();
-PrintArray();
+CreateArray(array);
+PrintArray(array);
