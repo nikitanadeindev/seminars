@@ -1,9 +1,9 @@
 ﻿Console.Write("Введите размер массива: ");
 int arraySize = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[arraySize];
 
-int[] RandomArray(int size)
+int[] RandomArray(int[] array)
 {
-    int[] array = new int[size];
     Random rnd = new Random();
 
     for(int i = 0; i < array.Length; i++)
@@ -12,9 +12,11 @@ int[] RandomArray(int size)
     return array;
 }
 
-int[] randomArray = RandomArray(arraySize);
-
-for(int i = 0; i < randomArray.Length; i++)
+void PrintArray(int[] array)
 {
-    Console.Write(randomArray[i] + " ");
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
 }
+
+RandomArray(array);
+PrintArray(array);
