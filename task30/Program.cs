@@ -2,14 +2,11 @@
 int arraySize = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[arraySize];
 
-int[] RandomArray(int[] array)
+void RandomArray(int[] array)
 {
     Random rnd = new Random();
-
     for(int i = 0; i < array.Length; i++)
         array[i] = rnd.Next(0, 2);
-
-    return array;
 }
 
 void PrintArray(int[] array)
