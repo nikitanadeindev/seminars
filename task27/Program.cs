@@ -17,5 +17,6 @@ int DigitsSum(int num)
     return sum;
 }
 
+if(number < 0) number *= -1;
 int digitsSum = DigitsSum(number);
 Console.WriteLine($"{number} -> {digitsSum}");
