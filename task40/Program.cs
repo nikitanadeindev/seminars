@@ -11,5 +11,5 @@ bool TriangleExists(int at, int bt, int ct)
 }
 
 bool result = TriangleExists(a, b, c);
-Console.WriteLine(result == true ? "Такой треугольник существует" 
-                                 : "Такого треугольника не существует");
+Console.WriteLine(result ? "Такой треугольник существует" 
+                         : "Такого треугольника не существует");
