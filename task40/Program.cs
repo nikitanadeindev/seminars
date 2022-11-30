@@ -7,8 +7,7 @@ int c = Convert.ToInt32(Console.ReadLine());
 
 bool TriangleExists(int at, int bt, int ct)
 {
-    if(at < bt + ct && bt < ct + at && ct < bt + at) return true;
-    else return false;
+    return at < bt + ct && bt < ct + at && ct < bt + at;
 }
 
 bool result = TriangleExists(a, b, c);
