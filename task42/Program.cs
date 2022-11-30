@@ -27,10 +27,9 @@ int[] DecimalToBinary(int num, int size)
 
     for (int i = 0; i < bin.Length; i++)
     {
-        bin[i] = num % 2;
+        bin[bin.Length - i - 1] = num % 2;
         num /= 2;
     }
-    Array.Reverse(bin);
     return bin;
 }
 
