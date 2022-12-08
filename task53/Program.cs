@@ -28,7 +28,7 @@ void PrintMatrix(int[,] matr)
     }
 }
 
-int[,] SwapRows(int[,] matr)
+void SwapRows(int[,] matr)
 {
     for(int i = 0; i <= matr.GetLength(0); i++)
     {   // Записываем в переменную значение элемента i последней строки
@@ -38,7 +38,6 @@ int[,] SwapRows(int[,] matr)
         // В элемент i первой строки записываем значение элемента i последней строки
         matr[0, i] = lastRowValue;
     }
-    return matr;
 }
 
 int[,] matrix = CreateMatrix(3, 4, 1, 9);
