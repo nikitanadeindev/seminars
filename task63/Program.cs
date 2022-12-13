@@ -3,7 +3,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 void NaturalNumbers(int n)
 {
-    if(n < 1) return;
+    if(n == 0) return;
     NaturalNumbers(n - 1);
     Console.Write(n + " ");
 }
